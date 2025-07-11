@@ -63,3 +63,29 @@ If you’d like to discuss this project or need a website built:
 - 🧑‍💻 GitHub: [@amatuercoder015]((https://github.com/amateurcoder015))
 
 
+## 🔧 Installation
+
+To run this project locally and build Tailwind CSS:
+
+1. Clone the repository:
+  ```bash
+  git clone https://github.com/amatuercoder015/RRE-website.git
+  ```
+2. Navigate into the project folder:
+  ```bash
+  cd RRE-website
+  ```
+
+3. Install the required dependencies:
+  ```bash
+  npm install
+  ```
+
+4. Start Tailwind CSS build watcher:
+  ```bash
+  npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch
+  ```
+5. Now open index.html in your browser.
+
+
+
