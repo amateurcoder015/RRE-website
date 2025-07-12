@@ -52,3 +52,4 @@ document.addEventListener('DOMContentLoaded', function () {
     zoom: 0.85
   });
 });
+
