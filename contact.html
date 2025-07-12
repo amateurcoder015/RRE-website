@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+
+    <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="dist/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+     <!-- 🔹 Navbar (copied from homepage) -->
+<header class="sticky top-0 bg-white shadow-md z-50">
+  <div class="flex justify-between items-center px-6 py-4">
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold text-blue-600">
+      <a href="index.html">RAJ RAJENDRA ENTERPRISE</a>
+    </h1>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
+      <a href="index.html" class="scramble font-mono hover:text-blue-600 transition" data-text="Home">Home</a>
+      <a href="catalog.html" class="scramble font-mono hover:text-blue-600 transition" data-text="Products">Products</a>
+      <a href="contact.html" class="scramble font-mono hover:text-blue-600 transition" data-text="Contact">Contact</a>
+      <a href="explore.html" class="scramble font-mono hover:text-blue-600 transition" data-text="Explore">Explore</a>
+    </nav>
+
+    <!-- Hamburger Button (Mobile) -->
+    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Nav Links -->
+  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2 text-gray-700 font-medium">
+    <a href="index.html" class="block scramble font-mono hover:text-blue-600 transition" data-text="Home">Home</a>
+    <a href="catalog.html" class="block scramble font-mono hover:text-blue-600 transition" data-text="Products">Products</a>
+    <a href="explore.html" class="block scramble font-mono hover:text-blue-600 transition" data-text="Explore">Explore</a>
+  </div>
+</header>
+
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h1 class="text-4xl font-bold text-center text-blue-600 mb-12">Get in Touch</h1>
+
+    <div class="grid md:grid-cols-2 gap-12 bg-white p-8 rounded-lg shadow-md">
+      
+      <!-- Left: Contact Info -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Contact Information</h2>
+        <p class="mb-4">We'd love to hear from you. Reach out to us anytime!</p>
+
+        <div class="space-y-4">
+          <div class="flex items-center space-x-3">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5h18M3 12h18M3 19h18"/></svg>
+            <span>Raj Rajendra Enterprise</span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1118 0z"/></svg>
+            <span>Mumbai, Maharashtra</span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 2H8a2 2 0 00-2 2v16l6-3 6 3V4a2 2 0 00-2-2z"/></svg>
+            <a href="mailto:rajrajendraenterprise@gmail.com" class="hover:text-blue-700">rajrajendraenterprise@gmail.com</a>
+          </div>
+          <div class="flex items-center space-x-3">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5h2a2 2 0 012 2v0a2 2 0 01-2 2H3V5zm0 6h2a2 2 0 012 2v0a2 2 0 01-2 2H3v-4zm0 6h2a2 2 0 012 2v0a2 2 0 01-2 2H3v-4z"/></svg>
+            <a href="tel:+919619941726" class="hover:text-blue-700">+91 96199 41726</a>
+          </div>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="mt-6 flex space-x-4">
+          <a href="https://wa.me/919619941726" target="_blank" title="WhatsApp">
+            <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" class="w-8 h-8" />
+          </a>
+          <a href="https://instagram.com" target="_blank" title="Instagram">
+            <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram" class="w-8 h-8" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6" action="thank-you.html">
+        
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="bot-field" />
+        <div>
+          <label class="block font-medium mb-1" for="name">Name</label>
+          <input type="text" id="name" name="name" required class="w-full border border-gray-300 p-3 rounded" />
+        </div>
+
+        <div>
+          <label class="block font-medium mb-1" for="email">Number</label>
+          <input type="number" id="email" name="email" required class="w-full border border-gray-300 p-3 rounded" />
+        </div>
+
+        <div>
+          <label class="block font-medium mb-1" for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required class="w-full border border-gray-300 p-3 rounded"></textarea>
+        </div>
+
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  <footer class="bg-gray-900 text-white mt-16" data-aos="fade-up">
+  <div class="max-w-7xl mx-auto px-8 py-12 grid md:grid-cols-4 gap-8">
+    
+    <!-- Brand -->
+    <div>
+      <h2 class="text-2xl font-bold text-blue-400">Raj Rajendra Enterprise</h2>
+      <p class="text-gray-400 mt-2">Supplying premium paper to businesses across India. Fast, reliable, and trusted by many.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3 text-gray-100">Quick Links</h3>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="index.html" class="hover:text-white">Home</a></li>
+        <li><a href="catalog.html" class="hover:text-white">Products</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+        <li><a href="explore.html" class="hover:text-white">Explore</a></li>
+        
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3 text-gray-100">Contact</h3>
+      <ul class="text-gray-400 space-y-2">
+        <li><a href="tel:+919619941726" class="text-blue-600 hover:underline">📞 +91 96199 41726</a></li>
+        <li><a href="mailto:rajrajendraenterprise@gmail.com" class="text-blue-600 hover:underline">📧rajrajendraenterprise@gmail.com</a></li>
+        <li>📍 Mumbai, Maharashtra</li>
+      </ul>
+    </div>
+
+    <!-- Social -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3 text-gray-100">Follow Us</h3>
+      <div class="flex space-x-4">
+        <a href="https://www.instagram.com/rajrajendraent?igsh=MjJ3NWdsbHpocnE3&utm_source=qr" class="hover:text-blue-400">Instagram</a>
+        <a href="https://www.linkedin.com/in/shashank-kothari-a350a0183?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="hover:text-blue-400">LinkedIn</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center text-gray-500 text-sm py-4 border-t border-gray-700">
+    <a href="https://www.linkedin.com/in/bhavyaxkothari/">Created By Bhavya Kothari | +91 96191 41433</a>
+  </div>
+</footer>
+
+   <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+    <script src="js\main.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+</body>
+</html>
