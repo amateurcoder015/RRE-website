@@ -37,16 +37,15 @@ This is a complete website I built from scratch for a client in the paper tradin
 
 ## 📦 Folder Structure
 
-project/
-│
-├── index.html
-├── catalog.html
-├── explore.html
-├── dist/ # Compiled Tailwind CSS
-├── src/ # Tailwind source file (input.css)
-├── assets/ # Images and icons
-├── js/ # Animations and interaction
-└── README.md
+project/<br>
+├── index.html <br>
+├── catalog.html <br>
+├── explore.html <br>
+├── dist/ # Compiled Tailwind CSS <br>
+├── src/ # Tailwind source file (input.css) <br>
+├── assets/ # Images and icons <br>
+├── js/ # Animations and interaction <br>
+└── README.md <br>
 
 ## 📍 Live
 
