@@ -48,10 +48,10 @@ project/
 ├── js/ # Animations and interaction
 └── README.md
 
-## 📍 Live Demo (Coming Soon)
+## 📍 Live
 
 
-Will be hosted on a custom domain
+Visit rrepaper.in
 
 
 ## 📬 Contact Me
