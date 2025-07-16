@@ -13,26 +13,27 @@
   <title>Catalog - Premium Paper</title>
   <link href="dist/style.css" rel="stylesheet" />
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-[#fffef6] text-gray-800">
 
-  <!-- 🔹 Navbar (copied from homepage) -->
-<header class="sticky top-0 bg-white shadow-md z-50">
+
+ <!-- Header -->
+<header class="sticky top-0 bg-[#fefae0] shadow-md z-50">
   <div class="flex justify-between items-center px-6 py-4">
     <!-- Logo -->
-    <h1 class="text-2xl font-bold text-blue-600">
+    <h1 class="text-2xl font-bold text-red-600 tracking-wider">
       <a href="index.html">RAJ RAJENDRA ENTERPRISE</a>
     </h1>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
-      <a href="index.html" class="scramble font-mono hover:text-blue-600 transition" data-text="Home">Home</a>
-      <a href="catalog.html" class="scramble font-mono hover:text-blue-600 transition" data-text="Products">Products</a>
-      <a href="contact.html" class="scramble font-mono hover:text-blue-600 transition" data-text="Contact">Contact</a>
-      <a href="explore.html" class="scramble font-mono hover:text-blue-600 transition" data-text="Explore">Explore</a>
+    <nav class="hidden md:flex space-x-6 text-[#6c584c] font-medium">
+      <a href="index.html" class="scramble font-mono hover:text-red-600 transition" data-text="Home">Home</a>
+      <a href="catalog.html" class="scramble font-mono hover:text-red-600 transition" data-text="Products">Products</a>
+      <a href="contact.html" class="scramble font-mono hover:text-red-600 transition" data-text="Contact">Contact</a>
+      <a href="explore.html" class="scramble font-mono hover:text-red-600 transition" data-text="Explore">Explore</a>
     </nav>
 
     <!-- Hamburger Button (Mobile) -->
-    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+    <button id="menu-toggle" class="md:hidden text-[#6c584c] focus:outline-none">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
         stroke-linecap="round" stroke-linejoin="round">
         <path d="M4 6h16M4 12h16M4 18h16" />
@@ -41,11 +42,11 @@
   </div>
 
   <!-- Mobile Nav Links -->
-  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2 text-gray-700 font-medium">
-    <a href="index.html" class="block font-mono hover:text-blue-600 transition" data-text="Home">Home</a>
-    <a href="catalog.html" class="block font-mono hover:text-blue-600 transition" data-text="Products">Products</a>
-    <a href="contact.html" class="block font-mono hover:text-blue-600 transition" data-text="Explore">Contact</a>
-    <a href="explore.html" class="block font-mono hover:text-blue-600 transition" data-text="Explore">Explore</a>
+  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2 text-[#6c584c] font-medium">
+    <a href="index.html" class="block font-mono hover:text-red-600 transition" data-text="Home">Home</a>
+    <a href="catalog.html" class="block font-mono hover:text-red-600 transition" data-text="Products">Products</a>
+    <a href="contact.html" class="block font-mono hover:text-red-600 transition" data-text="Contact">Contact</a>
+    <a href="explore.html" class="block font-mono hover:text-red-600 transition" data-text="Explore">Explore</a>
   </div>
 </header>
 
@@ -59,189 +60,165 @@
 </script>
 
 
-  <!-- 🔹 Page Header -->
-  <header class="py-8 text-center">
-    <h1 class="text-4xl font-bold text-blue-800">Our Product Catalog</h1>
-    <p class="text-gray-600 mt-2">Explore our premium paper products</p>
-  </header>
+<!-- 🔹 Page Header -->
+<header class="py-8 text-center bg-[#fffef6] text-[#6c584c]">
+  <h1 class="text-4xl font-bold">Our Product Catalog</h1>
+  <p class="mt-2 text-[#7f5539]">Explore our premium paper products</p>
+</header>
 
-  <!-- 🔹 Product Cards Grid -->
-  <section class="px-6 pb-16 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- 🔹 Product Cards Grid -->
+<section class="px-6 pb-16 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 bg-[#fffef6] text-[#6c584c]">
 
-    <!-- 💼 Product Card 1 -->
-    <div data-aos="fade-up" class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden transition">
-      <img src="assets/fbb.jpeg" alt="FBB & SBS Paper" class="w-full h-56 object-cover" />
-      <div class="p-5">
-        <h2 class="text-xl font-semibold mb-2">FBB & SBS</h2>
-        <p class="text-sm font-semibold text-gray-600 mb-4">
-        💼 Used for: High-quality packaging, Monocartons
-        <br>
-        📦 Brands: Imported, ITC, JK
-        <br>
-        📏 GSM Range: 200 to 450
-        <br>
+  <!-- 💼 Product Card -->
+  <!-- Repeat this card block for each product -->
+  <div data-aos="fade-up" class="bg-[#fefae0] rounded-xl shadow hover:shadow-lg overflow-hidden transition border border-[#e0cfc1]">
+    <img src="assets/fbb.jpeg" alt="FBB & SBS Paper" class="w-full h-56 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold mb-2">FBB & SBS</h2>
+      <p class="text-sm font-semibold mb-4 text-[#7f5539]">
+        💼 Used for: High-quality packaging, Monocartons<br>
+        📦 Brands: Imported, ITC, JK<br>
+        📏 GSM Range: 200 to 450<br>
         📝 Paper Type: Coated board, high stiffness
-          </p>
-        <a href="https://wa.me/919619941726" class="text-blue-600 font-medium hover:underline">Order Now</a>
-      </div>
+      </p>
+      <a href="https://wa.me/919619941726" class="text-red-500 font-medium hover:underline">Order Now</a>
     </div>
+  </div>
 
-    <!-- 💼 Product Card 2 -->
-    <div data-aos="fade-up" class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden transition">
-      <img src="assets/maplitho.jpeg" alt="Maplitho Paper" class="w-full h-56 object-cover" />
-      <div class="p-5">
-        <h2 class="text-xl font-semibold mb-2">Maplitho Paper</h2>
-        <p class="text-sm font-semibold mb-4 text-gray-600 ">
-          🏭 Source: Imported & Indian Mills
-          <br>
-          📏 GSM: 40 to 120
-          <br>
-          📚 Use: Writing, printing, notebooks, forms
-        </p>
-        <a href="https://wa.me/919619941726" class="text-blue-600 font-medium hover:underline">Order Now</a>
-      </div>
+  <!-- 💼 Product Card 2 -->
+  <div data-aos="fade-up" class="bg-[#fefae0] rounded-xl shadow hover:shadow-lg overflow-hidden transition border border-[#e0cfc1]">
+    <img src="assets/maplitho.jpeg" alt="Maplitho Paper" class="w-full h-56 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold mb-2">Maplitho Paper</h2>
+      <p class="text-sm font-semibold mb-4 text-[#7f5539]">
+        🏭 Source: Imported & Indian Mills<br>
+        📏 GSM: 40 to 120<br>
+        📚 Use: Writing, printing, notebooks, forms
+      </p>
+      <a href="https://wa.me/919619941726" class="text-red-500 font-medium hover:underline">Order Now</a>
     </div>
+  </div>
 
-    <!-- 💼 Product Card 3 -->
-    <div data-aos="fade-up" class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden transition">
-      <img src="assets/greyback.webp" alt="Greyback & Whiteback Duplex" class="w-full h-56 object-cover" />
-      <div class="p-5">
-        <h2 class="text-xl font-semibold mb-2">Greyback & Whiteback Duplex</h2>
-        <p class="text-sm font-semibold text-gray-600 mb-4">
-          🧾 Type: Coated Duplex Board
-          <br>
-          📏 GSM: 190 to 470
-          <br>
-          📦 Use: Cartons, packaging boxes, product boxes, outer print packaging
-        </p>
-        <a href="https://wa.me/919619941726" class="text-blue-600 font-medium hover:underline">Order Now</a>
-      </div>
+  
+  <!-- 💼 Product Card 3 -->
+  <div data-aos="fade-up" class="bg-[#fefae0] rounded-xl shadow hover:shadow-lg overflow-hidden transition border border-[#e0cfc1]">
+    <img src="assets/greyback.webp" alt="Greyback & Whiteback Duplex" class="w-full h-56 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold mb-2">Greyback & Whiteback Duplex</h2>
+      <p class="text-sm font-semibold mb-4 text-[#7f5539]">
+        🧾 Type: Coated Duplex Board<br>
+        📏 GSM: 190 to 470<br>
+        📦 Use: Cartons, packaging boxes, outer print packaging
+      </p>
+      <a href="https://wa.me/919619941726" class="text-red-500 font-medium hover:underline">Order Now</a>
     </div>
+  </div>
 
-    <!-- 💼 Product Card 4 -->
-    <div data-aos="fade-up" class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden transition">
-      <img src="assets/art_paper.jpeg" alt="Art Paper & Art Card" class="w-full h-56 object-cover" />
-      <div class="p-5">
-        <h2 class="text-xl font-semibold mb-2">Art Paper & Art Card</h2>
-        <p class="text-sm font-semibold text-gray-600 mb-4">
-          🌍 Source: Imported C2S (Coated on Both Sides)
-          <br>
-          📏 GSM: 90 to 350
-          <br>
-          🖨️ Use: Brochures, catalogues, premium prints, posters, visiting cards
-
-        </p>
-        <a href="https://wa.me/919619941726" class="text-blue-600 font-medium hover:underline">Order Now</a>
-      </div>
+  <!-- 💼 Product Card 4 -->
+  <div data-aos="fade-up" class="bg-[#fefae0] rounded-xl shadow hover:shadow-lg overflow-hidden transition border border-[#e0cfc1]">
+    <img src="assets/art_paper.jpeg" alt="Art Paper & Art Card" class="w-full h-56 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold mb-2">Art Paper & Art Card</h2>
+      <p class="text-sm font-semibold mb-4 text-[#7f5539]">
+        🌍 Source: Imported C2S<br>
+        📏 GSM: 90 to 350<br>
+        🖨️ Use: Brochures, catalogues, premium prints
+      </p>
+      <a href="https://wa.me/919619941726" class="text-red-500 font-medium hover:underline">Order Now</a>
     </div>
+  </div>
 
     <!-- 💼 Product Card 5 -->
-    <div data-aos="fade-up" class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden transition">
-      <img src="assets/kraft.jpeg" alt="Newsprint Paper" class="w-full h-56 object-cover" />
-      <div class="p-5">
-        <h2 class="text-xl font-semibold mb-2">Kraft Paper</h2>
-        <p class="text-sm font-semibold text-gray-600 mb-4">
-          📦 Types: Natural & Golden
-          <br>
-          📏 GSM Range: 100 to 300
-          <br>
-          💪 Burst Factor: 16 to 30 BF
-          <br>
-          🔧 Use: Packaging, envelopes, bags, industrial wrapping
-        </p>
-        <a href="https://wa.me/919619941726" class="text-blue-600 font-medium hover:underline">Order Now</a>
-      </div>
+  <div data-aos="fade-up" class="bg-[#fefae0] rounded-xl shadow hover:shadow-lg overflow-hidden transition border border-[#e0cfc1]">
+    <img src="assets/kraft.jpeg" alt="Kraft Paper" class="w-full h-56 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold mb-2">Kraft Paper</h2>
+      <p class="text-sm font-semibold mb-4 text-[#7f5539]">
+        📦 Types: Natural & Golden<br>
+        📏 GSM Range: 100 to 300<br>
+        💪 Burst Factor: 16 to 30 BF<br>
+        🔧 Use: Packaging, envelopes, bags, industrial wrapping
+      </p>
+      <a href="https://wa.me/919619941726" class="text-red-500 font-medium hover:underline">Order Now</a>
     </div>
+  </div>
 
-    <!-- 💼 Product Card 6 -->
-    <div data-aos="fade-up" class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden transition">
-      <img src="assets/a4.jpg" alt="MG Poster Paper" class="w-full h-56 object-cover" />
-      <div class="p-5">
-        <h2 class="text-xl font-semibold mb-2">A4 Copier Paper</h2>
-        <p class="text-sm font-semibold text-gray-600 mb-4">
-          📏 GSM Options: 70, 75, 80
-          <br>
-          🖨️ Use: Office printing, photocopying, inkjet & laser printers
-          <br>
-          📁 Format: Standard A4 size sheets for everyday use
-        </p>
-        <a href="https://wa.me/919619941726" class="text-blue-600 font-medium hover:underline">Order Now</a>
-      </div>
+  <!-- 💼 Product Card 6 -->
+  <div data-aos="fade-up" class="bg-[#fefae0] rounded-xl shadow hover:shadow-lg overflow-hidden transition border border-[#e0cfc1]">
+    <img src="assets/a4.jpg" alt="A4 Copier Paper" class="w-full h-56 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold mb-2">A4 Copier Paper</h2>
+      <p class="text-sm font-semibold mb-4 text-[#7f5539]">
+        📏 GSM Options: 70, 75, 80<br>
+        🖨️ Use: Office printing, photocopying<br>
+        📁 Format: Standard A4 size sheets
+      </p>
+      <a href="https://wa.me/919619941726" class="text-red-500 font-medium hover:underline">Order Now</a>
     </div>
+  </div>
 
-    <!-- 💼 Product Card 7 -->
-    <div data-aos="fade-up" class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden transition">
-      <img src="assets/book-sm.jpg" alt="MG Poster Paper" class="w-full h-56 object-cover" />
-      <div class="p-5">
-        <h2 class="text-xl font-semibold mb-2">Book Printing Paper</h2>
-        <p class="text-sm font-semibold text-gray-600 mb-4">
-          🌍 Source: Imported
-          <br>
-          📏 GSM Range: 50 to 55
-          <br>
-          📚 Use: Novel printing, religious books, manuals, low-ink absorption printing
-          <br>
-          📄 Features: Lightweight, opaque, smooth texture for fine print quality
-                  </p>
-        <a href="https://wa.me/919619941726" class="text-blue-600 font-medium hover:underline">Order Now</a>
-      </div>
+  <!-- 💼 Product Card 7 -->
+  <div data-aos="fade-up" class="bg-[#fefae0] rounded-xl shadow hover:shadow-lg overflow-hidden transition border border-[#e0cfc1]">
+    <img src="assets/book-sm.jpg" alt="Book Printing Paper" class="w-full h-56 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold mb-2">Book Printing Paper</h2>
+      <p class="text-sm font-semibold mb-4 text-[#7f5539]">
+        🌍 Source: Imported<br>
+        📏 GSM Range: 50 to 55<br>
+        📚 Use: Novels, religious books, manuals<br>
+        📄 Features: Lightweight, opaque, smooth
+      </p>
+      <a href="https://wa.me/919619941726" class="text-red-500 font-medium hover:underline">Order Now</a>
     </div>
+  </div>
 
-    <!-- 💼 Product Card 8 -->
-    <div data-aos="fade-up" class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden transition">
-      <img src="assets/non-tearable.webp" alt="MG Poster Paper" class="w-full h-56 object-cover" />
-      <div class="p-5">
-        <h2 class="text-xl font-semibold mb-2">Non-Tearable Sheets</h2>
-        <p class="text-sm font-semibold text-gray-600 mb-4">
-          🌍 Source: Imported
-          <br>
-          📐 Thickness: 90 to 300 microns
-          <br>
-          🛡️ Use: Durable documents, ID cards, menus, manuals
-          <br>
-          💪 Features: Water-resistant, tear-proof, ideal for long-lasting print materials
-        </p>
-        <a href="https://wa.me/919619941726" class="text-blue-600 font-medium hover:underline">Order Now</a>
-      </div>
+  <!-- 💼 Product Card 8 -->
+  <div data-aos="fade-up" class="bg-[#fefae0] rounded-xl shadow hover:shadow-lg overflow-hidden transition border border-[#e0cfc1]">
+    <img src="assets/non-tearable.webp" alt="Non-Tearable Sheets" class="w-full h-56 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold mb-2">Non-Tearable Sheets</h2>
+      <p class="text-sm font-semibold mb-4 text-[#7f5539]">
+        🌍 Source: Imported<br>
+        📐 Thickness: 90 to 300 microns<br>
+        🛡️ Use: ID cards, menus, manuals<br>
+        💪 Features: Tear-proof, waterproof
+      </p>
+      <a href="https://wa.me/919619941726" class="text-red-500 font-medium hover:underline">Order Now</a>
     </div>
+  </div>
 
-    <!-- 💼 Product Card 9 -->
-    <div data-aos="fade-up" class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden transition">
-      <img src="assets/gumming.jpg" alt="MG Poster Paper" class="w-full h-56 object-cover" />
-      <div class="p-5">
-        <h2 class="text-xl font-semibold mb-2">Gumming Sheets</h2>
-        <p class="text-sm font-semibold mb-4">
-          📏 GSM Range: Available in various GSM options
-          <br>
-          🧾 Use: Labels, stickers, packaging, adhesive applications
-          <br>
-          🧪 Features: Pre-gummed surface, strong adhesion, compatible with offset & digital printing
-        </p>
-        <a href="https://wa.me/919619941726" class="text-blue-600 font-medium hover:underline">Order Now</a>
-      </div>
+  <!-- 💼 Product Card 9 -->
+  <div data-aos="fade-up" class="bg-[#fefae0] rounded-xl shadow hover:shadow-lg overflow-hidden transition border border-[#e0cfc1]">
+    <img src="assets/gumming.jpg" alt="Gumming Sheets" class="w-full h-56 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold mb-2">Gumming Sheets</h2>
+      <p class="text-sm font-semibold mb-4 text-[#7f5539]">
+        📏 GSM Range: Various options<br>
+        🧾 Use: Labels, stickers, packaging<br>
+        🧪 Features: Pre-gummed, offset & digital compatible
+      </p>
+      <a href="https://wa.me/919619941726" class="text-red-500 font-medium hover:underline">Order Now</a>
     </div>
+  </div>
+
+</section>
 
 
-
-
-  </section>
-
-  <!-- enquiry Section -->
-<section class="px-6 py-12 bg-gray-100">
-  <div data-aos="fade-up" class="max-w-3xl mx-auto p-8 bg-white border border-gray-100 rounded-xl shadow-md">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Didn't find what you were looking for?</h2>
-    <p class="text-gray-500 mb-6">Let us know what paper you need — we’ll try to arrange it specially for you.</p>
+<!-- 🔸 Enquiry Section -->
+<section class="px-6 py-12 bg-[#fffef6] text-[#6c584c]">
+  <div data-aos="fade-up" class="max-w-3xl mx-auto p-8 bg-[#fefae0] border border-[#e0cfc1] rounded-xl shadow-md">
+    <h2 class="text-2xl font-semibold text-[#7f5539] mb-2">Didn't find what you were looking for?</h2>
+    <p class="text-sm text-[#6c584c] mb-6">Let us know what paper you need — we’ll try to arrange it specially for you.</p>
 
     <textarea 
       id="whatsappMessage" 
       rows="4" 
-      class="w-full p-4 border border-gray-200 bg-gray-50 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 text-gray-700 placeholder-gray-400"
+      class="w-full p-4 border border-[#e0cfc1] bg-[#fffef6] rounded-md focus:outline-none focus:ring-2 focus:ring-[#b91c1c] text-[#6c584c] placeholder-[#a89f9a]"
       placeholder="Type your custom paper request here..."></textarea>
 
     <button 
       onclick="sendWhatsApp()" 
-      class="mt-5 inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-medium px-6 py-3 rounded-md shadow-sm transition-all duration-200"
-    >
+      class="mt-5 inline-flex items-center gap-2 bg-red-500 hover:bg-red-700 text-white font-medium px-6 py-3 rounded-md shadow-sm transition-all duration-200">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
         <path d="M20.52 3.48A11.83 11.83 0 0 0 12 0C5.39 0 .03 5.36 0 12c0 2.11.55 4.17 1.6 6L0 24l6.18-1.6A11.95 11.95 0 0 0 12 24h.01c6.63 0 12-5.37 12-12a11.85 11.85 0 0 0-3.49-8.52ZM12.01 22c-1.67 0-3.31-.44-4.76-1.27l-.34-.2-3.67.95.98-3.57-.22-.36A9.93 9.93 0 0 1 2 12C2 6.49 6.5 2 12 2s10 4.49 10 10-4.49 10-9.99 10ZM17.53 14.6c-.29-.15-1.7-.84-1.96-.93-.26-.1-.45-.15-.64.15s-.74.93-.91 1.12c-.17.2-.33.22-.61.07s-1.18-.44-2.25-1.4a8.48 8.48 0 0 1-1.57-1.95c-.17-.29-.02-.45.13-.6.14-.15.31-.34.46-.51.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53s-.64-1.54-.88-2.12c-.23-.56-.47-.48-.64-.49l-.55-.01c-.18 0-.47.07-.72.34-.24.26-.94.92-.94 2.24s.97 2.6 1.1 2.78c.14.18 1.92 2.93 4.66 4.11.65.28 1.15.45 1.55.58.65.21 1.24.18 1.71.11.52-.08 1.7-.7 1.94-1.38.24-.68.24-1.27.17-1.38-.07-.11-.26-.18-.55-.32Z"/>
       </svg>
@@ -250,6 +227,7 @@
   </div>
 </section>
 
+<!-- 🔸 WhatsApp Script -->
 
   <script>
   function sendWhatsApp() {
@@ -267,54 +245,64 @@
 </script>
 
 
-<!-- Footer -->
-<footer class="bg-gray-900 text-white mt-16" data-aos="fade-up">
+ <!-- Footer -->
+<footer class="bg-gradient-to-br from-[#fefae0] to-[#faedcd] text-[#444] mt-16">
+
+  <svg class="w-full h-20 -mb-1 z-10" viewBox="0 0 1440 150" preserveAspectRatio="none">
+  <path fill="#fffef6" d="
+    M0,50 
+    C120,90 240,10 360,50 
+    C480,90 600,10 720,50 
+    C840,90 960,10 1080,50 
+    C1200,90 1320,10 1440,50 
+    L1440,0 L0,0 Z" />
+</svg>
   <div class="max-w-7xl mx-auto px-8 py-12 grid md:grid-cols-4 gap-8">
-    
+
     <!-- Brand -->
     <div>
-      <h2 class="text-2xl font-bold text-blue-400">Raj Rajendra Enterprise</h2>
-      <p class="text-gray-400 mt-2">Supplying premium paper to businesses across India. Fast, reliable, and trusted by many.</p>
+      <h2 class="text-2xl font-bold text-[#7f5539]">Raj Rajendra Enterprise</h2>
+      <p class="mt-2 text-sm">Supplying premium paper to businesses across India. Fast, reliable, and trusted by many.</p>
     </div>
 
     <!-- Quick Links -->
     <div>
-      <h3 class="text-lg font-semibold mb-3 text-gray-100">Quick Links</h3>
-      <ul class="space-y-2 text-gray-400">
-        <li><a href="index.html" class="hover:text-white">Home</a></li>
-        <li><a href="catalog.html" class="hover:text-white">Products</a></li>
-        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
-        <li><a href="explore.html" class="hover:text-white">Explore</a></li>
-        
+      <h3 class="text-lg font-semibold mb-3 text-[#7f5539]">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="hover:text-[#b91c1c] transition">Home</a></li>
+        <li><a href="catalog.html" class="hover:text-[#b91c1c] transition">Products</a></li>
+        <li><a href="contact.html" class="hover:text-[#b91c1c] transition">Contact</a></li>
+        <li><a href="explore.html" class="hover:text-[#b91c1c] transition">Explore</a></li>
       </ul>
     </div>
 
     <!-- Contact Info -->
     <div>
-      <h3 class="text-lg font-semibold mb-3 text-gray-100">Contact</h3>
-      <ul class="text-gray-400 space-y-2">
-        <li><a href="tel:+919619941726" class="text-blue-600 hover:underline">📞 +91 96199 41726</a></li>
-        <li><a href="mailto:rajrajendraenterprise@gmail.com" class="text-blue-600 hover:underline">📧rajrajendraenterprise@gmail.com</a></li>
+      <h3 class="text-lg font-semibold mb-3 text-[#7f5539]">Contact</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="tel:+919619941726" class="text-[#b91c1c] hover:underline">📞 +91 96199 41726</a></li>
+        <li><a href="mailto:rajrajendraenterprise@gmail.com" class="text-[#b91c1c] hover:underline">📧 rajrajendraenterprise@gmail.com</a></li>
         <li>📍 Mumbai, Maharashtra</li>
       </ul>
     </div>
 
     <!-- Social -->
     <div>
-      <h3 class="text-lg font-semibold mb-3 text-gray-100">Follow Us</h3>
-      <div class="flex space-x-4">
-        <a href="https://www.instagram.com/rajrajendraent?igsh=MjJ3NWdsbHpocnE3&utm_source=qr" class="hover:text-blue-400">Instagram</a>
-        <a href="https://www.linkedin.com/in/shashank-kothari-a350a0183?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="hover:text-blue-400">LinkedIn</a>
+      <h3 class="text-lg font-semibold mb-3 text-[#7f5539]">Follow Us</h3>
+      <div class="flex flex-col space-y-2 text-sm">
+        <a href="https://www.instagram.com/rajrajendraent?igsh=MjJ3NWdsbHpocnE3&utm_source=qr" class="hover:text-[#b91c1c]">Instagram</a>
+        <a href="https://www.linkedin.com/in/shashank-kothari-a350a0183" class="hover:text-[#b91c1c]">LinkedIn</a>
       </div>
     </div>
 
   </div>
 
-  <div class="text-center text-gray-500 text-sm py-4 border-t border-gray-700">
-    <a href="https://www.linkedin.com/in/bhavyaxkothari/">Created By Bhavya Kothari | +91 96191 41433</a>
+  <div class="text-center text-sm text-[#666] py-4 border-t border-[#e5e5e5]">
+    <a href="https://www.linkedin.com/in/bhavyaxkothari/" class="hover:text-[#b91c1c]">
+      Created By Bhavya Kothari | +91 96191 41433
+    </a>
   </div>
 </footer>
-
 
   <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/919619941726" id="whatsappBtn" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all">

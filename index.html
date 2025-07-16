@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <meta name="google-site-verification" content="9u3rD_0PZjKen7zCtb5v1TM4dVW-Y-cwmKHJnjSgxKI" />
+  <meta name="google-site-verification" content="9u3rD_0PZjKen7zCtb5v1TM4dVW-Y-cwmKHJnjSgxKI" />
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
@@ -10,35 +10,53 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
-
-    <!-- AOS CSS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RAJ RAJENDRA ENTERPRISE</title>
-  <link rel="stylesheet" href="dist/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raj Rajendra Enterprise</title>
+  <link rel="icon" href="favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .floating-paper {
+      filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.05));
+    }
+    .dot {
+      transition: transform 0.3s ease;
+    }
+    body {
+  font-family: 'Inter', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+  </style>
 </head>
-<body class="bg-white text-gray-800"  class="scroll-smooth">
+<body class="overflow-x-hidden font-sans">
 
   <!-- Header -->
-<header class="sticky top-0 bg-white shadow-md z-50">
+<header class="sticky top-0 bg-[#fefae0] shadow-md z-50">
   <div class="flex justify-between items-center px-6 py-4">
     <!-- Logo -->
-    <h1 class="text-2xl font-bold text-blue-600">
+    <h1 class="text-2xl font-bold text-red-600 tracking-wider">
       <a href="index.html">RAJ RAJENDRA ENTERPRISE</a>
     </h1>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
-      <a href="index.html" class="scramble font-mono hover:text-blue-600 transition" data-text="Home">Home</a>
-      <a href="catalog.html" class="scramble font-mono hover:text-blue-600 transition" data-text="Products">Products</a>
-      <a href="contact.html" class="scramble font-mono hover:text-blue-600 transition" data-text="Contact">Contact</a>
-      <a href="explore.html" class="scramble font-mono hover:text-blue-600 transition" data-text="Explore">Explore</a>
+    <nav class="hidden md:flex space-x-6 text-[#6c584c] font-medium">
+      <a href="index.html" class="scramble font-mono hover:text-red-600 transition" data-text="Home">Home</a>
+      <a href="catalog.html" class="scramble font-mono hover:text-red-600 transition" data-text="Products">Products</a>
+      <a href="contact.html" class="scramble font-mono hover:text-red-600 transition" data-text="Contact">Contact</a>
+      <a href="explore.html" class="scramble font-mono hover:text-red-600 transition" data-text="Explore">Explore</a>
     </nav>
 
     <!-- Hamburger Button (Mobile) -->
-    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+    <button id="menu-toggle" class="md:hidden text-[#6c584c] focus:outline-none">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
         stroke-linecap="round" stroke-linejoin="round">
         <path d="M4 6h16M4 12h16M4 18h16" />
@@ -47,11 +65,11 @@
   </div>
 
   <!-- Mobile Nav Links -->
-  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2 text-gray-700 font-medium">
-    <a href="index.html" class="block font-mono hover:text-blue-600 transition" data-text="Home">Home</a>
-    <a href="catalog.html" class="block font-mono hover:text-blue-600 transition" data-text="Products">Products</a>
-    <a href="contact.html" class="block font-mono hover:text-blue-600 transition" data-text="Explore">Contact</a>
-    <a href="explore.html" class="block font-mono hover:text-blue-600 transition" data-text="Explore">Explore</a>
+  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2 text-[#6c584c] font-medium">
+    <a href="index.html" class="block font-mono hover:text-red-600 transition" data-text="Home">Home</a>
+    <a href="catalog.html" class="block font-mono hover:text-red-600 transition" data-text="Products">Products</a>
+    <a href="contact.html" class="block font-mono hover:text-red-600 transition" data-text="Contact">Contact</a>
+    <a href="explore.html" class="block font-mono hover:text-red-600 transition" data-text="Explore">Explore</a>
   </div>
 </header>
 
@@ -65,172 +83,419 @@
 </script>
 
 
-  <!-- Hero Section -->
-  <section id="hero" class="relative h-screen text-white flex justify-center items-center">
-  
-    <div id="vanta-bg" class="absolute inset-0 -z-10 bg-blue-200"></div>
+<!-- 🔹 Hero Section with Looping Background Video -->
+<section class="relative h-[100vh] overflow-hidden">
+  <!-- Background Video -->
+  <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+    <source src="assets/rre_final_clip_small.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 
-  <div class="relative z-10 text-center">
-    <h1 class="text-5xl font-bold mb-6">Premium Paper Products</h1>
-    <p class="text-lg mb-8">Top quality, delivered reliably.</p>
-    <a href="#features" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Explore</a>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/30 z-10"></div>
+
+  <!-- Hero Content -->
+  <div class="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Raj Rajendra Enterprise</h1>
+    <p class="text-lg md:text-xl mb-8 max-w-2xl">Delivering premium paper products across India with speed, trust, and unbeatable quality.</p>
+    <a href="catalog.html" class="bg-[#b91c1c] hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition">Explore Our Catalog</a>
   </div>
 
-  <!-- Scroll Indicator -->
-  <div class="absolute bottom-8 text-white-500 animate-bounce">
-    <span class="text-2xl">↓</span>
+
+</section>
+
+<section><br></section>
+
+
+<!-- WHY CHOOSE US SECTION -->
+<section id="why-click" class="relative h-screen bg-gradient-to-br from-[#fefae0] to-[#faedcd] flex items-center justify-center overflow-hidden">
+    <!-- Top Tear -->
+  <svg class="absolute top-0 left-0 w-full h-28 z-10" viewBox="0 0 1440 150" preserveAspectRatio="none">
+    <path fill="#ffffff" d="M0,50 
+      C120,90 240,10 360,50 
+      C480,90 600,10 720,50 
+      C840,90 960,10 1080,50 
+      C1200,90 1320,10 1440,50 
+      L1440,0 L0,0 Z" />
+  </svg>
+  <h2 class="absolute top-10 py-8 text-4xl font-extrabold text-red-500 z-10">Why Choose Us?</h2>
+
+  <h4 class="absolute top-40 py-2 text-[#6c584c] text-sm animate-bounce z-30">👇 Tap!</h4>
+
+<!-- 🔸 Compact Card Stack -->
+<div id="card-stack" class="relative w-[90vw] max-w-md h-[360px] mx-auto mt-10 mb-16">
+  <!-- Card 1 -->
+  <div class="why-card absolute inset-0 bg-[#fdf6e3] rounded-2xl shadow-xl p-5 flex flex-col items-center text-center text-[#6c584c] cursor-pointer z-30">
+    <div class="text-3xl mb-2">🏭</div>
+    <h3 class="text-3xl font-semibold mb-1 text-[#b91c1c]">Trusted Manufacturers</h3>
+    <p class="text-lg leading-snug">Our long-standing partnerships with leading Indian and international mills help us maintain consistent stock levels and deliver quality without compromise. Each batch is carefully checked to meet industry standards, so you can rely on us for every order.</p>
   </div>
+
+  <!-- Card 2 -->
+  <div class="why-card absolute inset-0 translate-y-3 bg-[#faedcd] rounded-2xl shadow-xl p-5 flex flex-col items-center text-center text-[#6c584c] cursor-pointer z-20">
+    <div class="text-3xl mb-2">🚚</div>
+    <h3 class="text-3xl font-semibold mb-1 text-[#7f5539]">Fast Delivery</h3>
+    <p class="text-lg leading-snug">Whether you're in Mumbai or a remote industrial zone, we ensure your paper reaches you on time. We work with reliable logistics partners and provide end-to-end tracking, minimizing downtime for your business operations.</p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="why-card absolute inset-0 translate-y-6 bg-[#ede0d4] rounded-2xl shadow-xl p-5 flex flex-col items-center text-center text-[#6c584c] cursor-pointer z-10">
+    <div class="text-3xl mb-2">💰</div>
+    <h3 class="text-3xl font-semibold mb-1 text-[#6c584c]">Bulk Discounts</h3>
+    <p class="text-lg leading-snug">We value repeat clients and bulk buyers — enjoy tiered pricing, exclusive deals, and customized quotes for large quantities. With us, scaling your paper needs becomes more affordable and hassle-free.</p>
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- Progress Dots -->
+  <div class="absolute right-6 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-40">
+    <span class="dot w-3 h-3 rounded-full bg-[#7f5539] scale-125"></span>
+    <span class="dot w-3 h-3 rounded-full bg-[#d4a373]"></span>
+    <span class="dot w-3 h-3 rounded-full bg-[#d4a373]"></span>
+  </div>
+
+    <!-- Bottom Tear -->
+  <svg class="absolute bottom-0 left-0 w-full h-28 z-10" viewBox="0 0 1440 150" preserveAspectRatio="none">
+    <path fill="#ffffff" d="M0,50 
+      C120,90 240,10 360,50 
+      C480,90 600,10 720,50 
+      C840,90 960,10 1080,50 
+      C1200,90 1320,10 1440,50 
+      L1440,150 L0,150 Z" />
+  </svg>
 </section>
 
 
-  <!-- Why Choose Us -->
-<section id="features" class="px-8 py-16 bg-white" data-aos="fade-up">
-  <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Why Choose Us?</h2>
+<script>
+  const card = document.querySelector("#card-stack .why-card.z-30");
+  card.classList.add("animate-wiggle");
 
-  <div class="grid gap-6 md:grid-cols-3">
-    <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="100">
-      <h3 class="text-xl font-semibold mb-2 text-blue-700">Trusted Manufacturers</h3>
-      <p class="text-gray-600">We source directly from industry leaders to ensure quality and consistency in every batch.</p>
+  // You can define this animation in your Tailwind config or use custom CSS
+</script>
+
+
+<style>
+  @keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(1deg); }
+}
+  .animate-wiggle {
+    animation: wiggle 1s infinite;
+  }
+  .product-card {
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+  .center-card {
+    z-index: 30;
+    transform: scale(1);
+    filter: none;
+  }
+  .side-card {
+    transform: scale(0.85);
+    filter: blur(1.0px) brightness(0.95);
+  }
+</style>
+
+<section id="popular-products" class="relative w-full pt-24 pb-32 bg-gradient-to-br from-[#fefae0] to-[#faedcd] text-gray-800 flex flex-col items-center justify-center overflow-hidden">
+
+  <!-- Top Tear -->
+  <svg class="absolute top-0 left-0 w-full h-28 z-10" viewBox="0 0 1440 150" preserveAspectRatio="none">
+    <path fill="#ffffff" d="M0,50 
+      C120,90 240,10 360,50 
+      C480,90 600,10 720,50 
+      C840,90 960,10 1080,50 
+      C1200,90 1320,10 1440,50 
+      L1440,0 L0,0 Z" />
+  </svg>
+
+  <h2 class="text-4xl font-extrabold mb-16 text-center text-red-500 z-20">Popular Products</h2>
+
+  <div class="relative flex items-center justify-center h-[400px] w-full z-20">
+    <div class="absolute w-[500px] h-[380px] product-card bg-white rounded-xl border border-[#000000] shadow-2xl p-6 flex flex-col items-center justify-center text-center cursor-pointer z-10" data-index="0">
+      <div class="text-5xl">📦</div>
+      <h3 class="text-xl text-gray-600 font-bold mt-2">🧻 FBB & SBS</h3>
+      <p class="text-sm mt-1 text-gray-500">High-quality board used in packaging, available from 200 to 450 GSM. Trusted by leading brands for strength & printability.</p>
     </div>
-    <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="100">
-      <h3 class="text-xl font-semibold mb-2 text-blue-700">Fast Delivery</h3>
-      <p class="text-gray-600">We understand urgency — quick and reliable delivery for your business needs.</p>
+
+    <div class="absolute w-[500px] h-[400px] product-card bg-white rounded-xl border border-[#000000] shadow-2xl p-6 flex flex-col items-center justify-center text-center cursor-pointer z-20" data-index="1">
+      <div class="text-5xl">📄</div>
+      <h3 class="text-xl text-gray-600 font-bold mt-2">📄 Maplitho Paper</h3>
+      <p class="text-sm mt-1 text-gray-500">Smooth & bright paper for writing, printing, and office use. Available from 40 to 120 GSM.</p>
     </div>
-    <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="100">
-      <h3 class="text-xl font-semibold mb-2 text-blue-700">Bulk Discounts</h3>
-      <p class="text-gray-600">Save more with wholesale rates for bulk and repeat orders.</p>
+
+    <div class="absolute w-[500px] h-[380px] product-card bg-white rounded-xl border border-[#000000] shadow-2xl p-6 flex flex-col items-center justify-center text-center cursor-pointer z-10" data-index="2">
+      <div class="text-5xl">🧻</div>
+      <h3 class="text-xl text-gray-600 mt-2">📦 Greyback & Whiteback Duplex</h3>
+      <p class="text-sm mt-1 text-gray-500">Economical boards with coated surface, ideal for cartons & packaging. 190 to 470 GSM range.</p>
     </div>
+
   </div>
+  <div class="mt-10 flex justify-center">
+  <a href="/catalog.html" class="px-6 py-3 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 transition">
+    View Full Catalog
+  </a>
+</div>
+
+
+  <!-- Bottom Tear -->
+  <svg class="absolute bottom-0 left-0 w-full h-28 z-10" viewBox="0 0 1440 150" preserveAspectRatio="none">
+    <path fill="#ffffff" d="M0,50 
+      C120,90 240,10 360,50 
+      C480,90 600,10 720,50 
+      C840,90 960,10 1080,50 
+      C1200,90 1320,10 1440,50 
+      L1440,150 L0,150 Z" />
+  </svg>
 </section>
 
-<!-- Product Preview -->
-<section class="px-8 py-16 bg-gray-50">
-  <div class="text-center mb-10">
-    <h2 class="text-3xl font-bold text-gray-800">Popular Products</h2>
-    <p class="text-gray-600 mt-2">A quick look at some of our top-selling paper varieties</p>
-  </div>
-
-  <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-    
-    <!-- Product Card -->
-    <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
-      <h3 class="text-lg font-semibold text-gray-800">🧻 FBB & SBS</h3>
-      <p class="text-gray-600 text-sm">High-quality board used in packaging, available from 200 to 450 GSM. Trusted by leading brands for strength & printability.</p>
-    </div>
-
-    <!-- Product Card -->
-    <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
-      <h3 class="text-lg font-semibold text-gray-800">📄 Maplitho Paper</h3>
-      <p class="text-gray-600 text-sm">Smooth & bright paper for writing, printing, and office use. Available from 40 to 120 GSM.</p>
-    </div>
-
-    <!-- Product Card -->
-    <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
-      <h3 class="text-lg font-semibold text-gray-800">📦 Greyback & Whiteback Duplex</h3>
-      <p class="text-gray-600 text-sm">Economical boards with coated surface, ideal for cartons & packaging. 190 to 470 GSM range.</p>
-    </div>
-
-    <!-- Product Card -->
-    <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
-      <h3 class="text-lg font-semibold text-gray-800">🎨 Art Paper & Art Card</h3>
-      <p class="text-gray-600 text-sm">Glossy C2S sheets perfect for brochures, flyers & covers. Ranges from 90 to 350 GSM.</p>
-    </div>
-
-  </div>
-
-  <div class="text-center mt-10">
-    <a href="catalog.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-      View Full Catalog
-    </a>
-  </div>
-</section>
 
 
 <!-- Footer -->
-<footer class="bg-gray-900 text-white mt-16" data-aos="fade-up">
+<footer class="bg-gradient-to-br from-[#fefae0] to-[#faedcd] text-[#444]">
+
+  <svg class="w-full h-20 -mb-1 z-10" viewBox="0 0 1440 150" preserveAspectRatio="none">
+  <path fill="#ffffff" d="
+    M0,50 
+    C120,90 240,10 360,50 
+    C480,90 600,10 720,50 
+    C840,90 960,10 1080,50 
+    C1200,90 1320,10 1440,50 
+    L1440,0 L0,0 Z" />
+</svg>
   <div class="max-w-7xl mx-auto px-8 py-12 grid md:grid-cols-4 gap-8">
-    
+
     <!-- Brand -->
     <div>
-      <h2 class="text-2xl font-bold text-blue-400">Raj Rajendra Enterprise</h2>
-      <p class="text-gray-400 mt-2">Supplying premium paper to businesses across India. Fast, reliable, and trusted by many.</p>
+      <h2 class="text-2xl font-bold text-[#7f5539]">Raj Rajendra Enterprise</h2>
+      <p class="mt-2 text-sm">Supplying premium paper to businesses across India. Fast, reliable, and trusted by many.</p>
     </div>
 
     <!-- Quick Links -->
     <div>
-      <h3 class="text-lg font-semibold mb-3 text-gray-100">Quick Links</h3>
-      <ul class="space-y-2 text-gray-400">
-        <li><a href="index.html" class="hover:text-white">Home</a></li>
-        <li><a href="catalog.html" class="hover:text-white">Products</a></li>
-        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
-        <li><a href="explore.html" class="hover:text-white">Explore</a></li>
-        
+      <h3 class="text-lg font-semibold mb-3 text-[#7f5539]">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="hover:text-[#b91c1c] transition">Home</a></li>
+        <li><a href="catalog.html" class="hover:text-[#b91c1c] transition">Products</a></li>
+        <li><a href="contact.html" class="hover:text-[#b91c1c] transition">Contact</a></li>
+        <li><a href="explore.html" class="hover:text-[#b91c1c] transition">Explore</a></li>
       </ul>
     </div>
 
     <!-- Contact Info -->
     <div>
-      <h3 class="text-lg font-semibold mb-3 text-gray-100">Contact</h3>
-      <ul class="text-gray-400 space-y-2">
-        <li><a href="tel:+919619941726" class="text-blue-600 hover:underline">📞 +91 96199 41726</a></li>
-        <li><a href="mailto:rajrajendraenterprise@gmail.com" class="text-blue-600 hover:underline">📧rajrajendraenterprise@gmail.com</a></li>
+      <h3 class="text-lg font-semibold mb-3 text-[#7f5539]">Contact</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="tel:+919619941726" class="text-[#b91c1c] hover:underline">📞 +91 96199 41726</a></li>
+        <li><a href="mailto:rajrajendraenterprise@gmail.com" class="text-[#b91c1c] hover:underline">📧 rajrajendraenterprise@gmail.com</a></li>
         <li>📍 Mumbai, Maharashtra</li>
       </ul>
     </div>
 
     <!-- Social -->
     <div>
-      <h3 class="text-lg font-semibold mb-3 text-gray-100">Follow Us</h3>
-      <div class="flex space-x-4">
-        <a href="https://www.instagram.com/rajrajendraent?igsh=MjJ3NWdsbHpocnE3&utm_source=qr" class="hover:text-blue-400">Instagram</a>
-        <a href="https://www.linkedin.com/in/shashank-kothari-a350a0183?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="hover:text-blue-400">LinkedIn</a>
+      <h3 class="text-lg font-semibold mb-3 text-[#7f5539]">Follow Us</h3>
+      <div class="flex flex-col space-y-2 text-sm">
+        <a href="https://www.instagram.com/rajrajendraent?igsh=MjJ3NWdsbHpocnE3&utm_source=qr" class="hover:text-[#b91c1c]">Instagram</a>
+        <a href="https://www.linkedin.com/in/shashank-kothari-a350a0183" class="hover:text-[#b91c1c]">LinkedIn</a>
       </div>
     </div>
 
   </div>
 
-  <div class="text-center text-gray-500 text-sm py-4 border-t border-gray-700">
-    <a href="https://www.linkedin.com/in/bhavyaxkothari/">Created By Bhavya Kothari | +91 96191 41433</a>
+  <div class="text-center text-sm text-[#666] py-4 border-t border-[#e5e5e5]">
+    <a href="https://www.linkedin.com/in/bhavyaxkothari/" class="hover:text-[#b91c1c]">
+      Created By Bhavya Kothari | +91 96191 41433
+    </a>
   </div>
 </footer>
 
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/919619941726" id="whatsappBtn" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all">
-    <div id="callPopup" class="fixed bottom-24 right-6 bg-green-600 text-white px-4 py-2 rounded-md shadow-lg opacity-0 pointer-events-none transition-opacity duration-500">
-  📞 Call us now!
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M20.52 3.48A11.8 11.8 0 0 0 12 .3a11.8 11.8 0 0 0-8.52 3.48A11.8 11.8 0 0 0 .3 12c0 2.1.57 4.11 1.63 5.88L0 24l6.3-1.65A11.88 11.88 0 0 0 12 23.7a11.8 11.8 0 0 0 8.52-3.48A11.8 11.8 0 0 0 23.7 12c0-3.18-1.24-6.16-3.48-8.52ZM12 21a9.06 9.06 0 0 1-4.65-1.28l-.33-.2-3.72.98.99-3.63-.22-.37a9.01 9.01 0 0 1-1.38-4.75 9 9 0 1 1 18 0 9.01 9.01 0 0 1-9 9Zm5.04-6.47c-.27-.13-1.6-.79-1.84-.88-.24-.09-.42-.13-.6.14-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.13-1.14-.42-2.17-1.33a8.13 8.13 0 0 1-1.5-1.86c-.15-.26-.02-.4.11-.53.12-.12.27-.3.4-.45.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.14-.6-1.45-.82-1.98-.22-.53-.44-.46-.6-.47-.16 0-.34-.01-.52-.01-.18 0-.46.06-.7.34s-.92.9-.92 2.2c0 1.3.95 2.56 1.08 2.74.13.18 1.88 2.9 4.57 4.06.64.28 1.14.45 1.53.58.64.2 1.23.17 1.7.1.52-.08 1.6-.65 1.83-1.29.23-.63.23-1.18.16-1.29-.07-.11-.24-.18-.5-.31Z"/></svg>
-  </a>
 
 
-<!--script for hover pop up-->
 <script>
-  const whatsappBtn = document.getElementById('whatsappBtn');
-  const callPopup = document.getElementById('callPopup');
-  let popupTimer;
+  gsap.registerPlugin(ScrollTrigger);
 
-  whatsappBtn.addEventListener('mouseenter', () => {
-    callPopup.classList.remove('opacity-0');
-    callPopup.classList.add('opacity-100');
+  gsap.from("footer > div > div", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: "footer",
+      start: "top bottom",
+    },
+  });
 
-    clearTimeout(popupTimer); // Reset timer if hovering again
-    popupTimer = setTimeout(() => {
-      callPopup.classList.remove('opacity-100');
-      callPopup.classList.add('opacity-0');
-    }, 2000);
+</script>
+
+
+<script>
+  const cards1 = gsap.utils.toArray(".product-card");
+  let currentIndex = 1;
+  let autoRotateInterval;
+
+  function positionCards() {
+    cards1.forEach((card, i) => {
+      card.classList.remove("center-card", "side-card");
+
+      if (i === currentIndex) {
+        // Center card
+        gsap.to(card, {
+          duration: 0.5,
+          x: 0,
+          scale: 1,
+          zIndex: 30,
+          filter: "blur(0px)",
+        });
+        card.classList.add("center-card");
+      } else if ((i + 3 - 1) % 3 === currentIndex) {
+        // Left side card
+        gsap.to(card, {
+          duration: 0.5,
+          x: -280,
+          scale: 0.85,
+          zIndex: 20,
+          filter: "blur(1.5px) brightness(0.95)",
+        });
+        card.classList.add("side-card");
+      } else if ((i + 1) % 3 === currentIndex) {
+        // Right side card
+        gsap.to(card, {
+          duration: 0.5,
+          x: 280,
+          scale: 0.85,
+          zIndex: 20,
+          filter: "blur(1.5px) brightness(0.95)",
+        });
+        card.classList.add("side-card");
+      } else {
+        // Hidden card (in case more than 3)
+        gsap.set(card, {
+          x: 0,
+          opacity: 0,
+          zIndex: 0,
+        });
+      }
+    });
+  }
+
+  cards1.forEach((card, index) => {
+    card.addEventListener("click", () => {
+      if (index === currentIndex) return;
+      currentIndex = index;
+      positionCards();
+      resetAutoRotate();
+    });
+  });
+
+  function startAutoRotate() {
+    autoRotateInterval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % cards1.length;
+      positionCards();
+    }, 4000);
+  }
+
+  function resetAutoRotate() {
+    clearInterval(autoRotateInterval);
+    startAutoRotate();
+  }
+
+  positionCards();
+  startAutoRotate();
+</script>
+
+
+
+
+
+<script>
+
+  // Card stack logic
+  const cards = gsap.utils.toArray('.why-card');
+  const dots = gsap.utils.toArray('.dot');
+  let idx = 0;
+
+  function highlightDot(n) {
+    dots.forEach((dot, i) => {
+      dot.classList.remove("bg-[#7f5539]", "scale-125");
+      dot.classList.add("bg-[#d4a373]");
+      if (i === n) {
+        dot.classList.add("bg-[#7f5539]", "scale-125");
+      }
+    });
+  }
+
+  function resetCards() {
+    idx = 0;
+    cards.forEach((card, i) => {
+      const y = i === 0 ? 0 : i === 1 ? 20 : 40;
+      const s = i === 0 ? 1 : i === 1 ? 0.95 : 0.9;
+
+      gsap.set(card, {
+        y: 600,
+        scale: s,
+        opacity: 0,
+        zIndex: 30 - i,
+        pointerEvents: "none"
+      });
+
+      gsap.to(card, {
+        y: y,
+        opacity: 1,
+        delay: i * 0.2,
+        duration: 0.6,
+        ease: "power2.out",
+        onComplete: () => {
+          if (i === 0) {
+            card.style.pointerEvents = "auto";
+          }
+        }
+      });
+    });
+    highlightDot(idx);
+  }
+
+  resetCards();
+
+  cards.forEach((card, i) => {
+    card.addEventListener("click", () => {
+      if (i !== idx) return;
+
+      gsap.fromTo(card, { scale: 1 }, { scale: 0.95, duration: 0.1, yoyo: true, repeat: 1 });
+
+      gsap.to(card, {
+        y: -800,
+        opacity: 0,
+        duration: 0.6,
+        ease: "power2.in",
+        delay: 0.15,
+        onComplete: () => {
+          card.style.pointerEvents = "none";
+          idx++;
+
+          if (cards[idx]) {
+            gsap.to(cards[idx], { scale: 1, y: 0, duration: 0.4, ease: "power2.out" });
+            cards[idx].style.pointerEvents = "auto";
+          }
+
+          if (cards[idx + 1]) {
+            gsap.to(cards[idx + 1], { scale: 0.95, y: 20, duration: 0.4, ease: "power2.out" });
+          }
+
+          highlightDot(idx);
+
+          if (idx >= cards.length) {
+            setTimeout(() => resetCards(), 200);
+          }
+        }
+      });
+    });
   });
 </script>
-
-
-  <!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-    <script src="js\main.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
 
 </body>
 </html>
